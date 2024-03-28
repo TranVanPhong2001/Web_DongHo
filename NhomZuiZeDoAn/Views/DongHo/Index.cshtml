@@ -1,0 +1,83 @@
+﻿@model IEnumerable<NhomZuiZeDoAn.Models.DongHo>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutDongHo.cshtml";
+    
+}
+
+<div class="row_1">
+    <div class="column-2">
+        <nav class="category">
+            <h3 class="category_heding">
+                <i class="category_heding-icon fas fa-list"></i>
+                Danh Mục
+            </h3>
+            <ul class="cattegory_list">
+                <li class="cattegory_item cattegory_item--activa ">
+                    <a href="#sanphammoi" class="cattegory_item_link">Sản phẩm phổ biến</a>
+                </li>
+                <li class="cattegory_item">
+                    <a href="#khuyenmai" class="cattegory_item_link">Sản phẩm khuyến mãi</a>
+                </li>
+                <li class="cattegory_item">
+                    <a href="#sanphammoi" class="cattegory_item_link">Sản phẩm mới</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="column-4">
+        <div class="home-filter">
+            <h2>Danh sách sản phẩm</h2>
+            @using (Html.BeginForm("Search", "DongHo", FormMethod.Get))
+            {
+                <p>
+                    @Html.TextBox("searchString")
+                    <input type="submit" value="Search" />
+                </p>
+            }
+
+        </div>
+        <div>
+            @Html.Label("Loại đồng hồ:", new { @class = "control-label" })
+            @Html.DropDownList("LoaiDongHo", new SelectList(Model), "Chọn loại đồng hồ", new { @class = "form-control" })
+        </div>
+        <div class="home-sanpham">
+            <div class="grid__row">
+                @foreach (var item in Model)
+                {
+                    <div class="grid__column-2-4">
+                        <div class="home-sanpham-item">
+
+                            <div class="home-sanpham-item_img" style="background-image: url(@item.Image); "></div>
+
+                            <p class="home-sanpham-item_name ">Tên: @item.Ten</p>
+                            <div class="home-sanpham-item_price">
+                                <span class="home-sanpham-item_price_current">Giá: @item.Gia</span>
+                            </div>
+                            <div class="home-sanpham-item_action">
+                                <span class="home-sanpham-item_like">
+                                    <i class="far fa-heart"></i>
+                                </span>
+                                <div class="home-sanpham-item_ratting">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="home-sanpham-item_origin">
+                                <span class="home-sanpham-item_origin_name">Xuất xứ: @item.XuatXu</span>
+                            </div>
+                            <div class="detail_button"><a href="/DongHo/Details/@item.Id">Detail</a></div>
+                            <div class="detail_button"><a href="#contact">Liên hệ</a></div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "PhanLoai";
+}
+
+<h2>PhanLoai</h2>
+
+@model List<string>
+
+<div>
+    <label for="ddlLoaiPhong">Chọn loại phòng:</label>
+    <select id="ddlLoaiPhong" name="LoaiPhong">
+        <option value="">Tất cả</option>
+        @foreach (var loaiPhong in Model)
+        {
+            <option value="@loaiPhong">@loaiPhong</option>
+        }
+    </select>
+</div>

@@ -1,0 +1,1024 @@
+﻿    
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>@ViewBag.Title</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="~/Content/Theme_DongHo/sty/styles.css" rel="stylesheet" />
+    <script src="~/Content/Theme_DongHo/js/scripts.js"></script>
+
+    
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="">NHOMZUIZE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#services">Giới Thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">SẢN PHẨM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">TEAM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">LIÊN HỆ</a></li>
+                    @Html.Partial("_LoginPartial")
+                </ul>
+                <div class="nav-item"><a class="nav-link" href="#sanphammoi"></a></div>
+                <div class="nav-item"><a class="nav-link" href="#khuyenmai"></a></div>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container">
+            <div class="masthead-subheading">ZUIZE Watch</div>
+            <div class="masthead-heading text-uppercase">Đồng Hồ Classico</div>
+
+            <span>Cùng với sự phát triển cho ra đời những mẫu đồng hồ nam chính hãng,</span>
+            <p>đa dạng về phong cách kiểu dáng, màu sắc, kích cỡ…</p>
+            <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">XEM SẢN PHẨM</a>
+        </div>
+    </header>
+    <div class="kodfun-galeri" id="sanphammoi"> 
+        <div style="background-image: url('/Content/Theme_DongHo/image/classico1.png');"></div>
+        <div style="background-image: url('/Content/Theme_DongHo/image/classico2.png');"></div>
+        <div style="background-image: url('/Content/Theme_DongHo/image/classico3.png');"></div>
+        <div style="background-image: url('/Content/Theme_DongHo/image/classico4.png');"></div>
+        <div style="background-image: url('/Content/Theme_DongHo/image/Simple1.jpg');"></div>
+    </div>
+    <!-- Portfolio Grid-->
+    <section class="page-section bg-light" id="portfolio">
+        <div class="container">
+            @RenderBody()
+        </div>
+    </section>
+    <!-- SanPhamKhuyenMai-->
+    <section class="page-section" id="khuyenmai">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Sản Phẩm Khuyến Mãi</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="home-sanpham-item">
+                        <div class="home-sanpham-item_img" style="background-image: url(/Content/Theme_DongHo/image/Nu2.jpg); "></div>
+                        <p class="home-sanpham-item_name ">Tên: BABY-G BGD-565SC-2</p>
+                        <div class="home-sanpham-item_price">
+                            <span class="home-sanpham-item_price_current">Giá: 2000000.00</span>
+                        </div>
+                        <div class="home-sanpham-item_action">
+                            <span class="home-sanpham-item_like">
+                                <i class="far fa-heart"></i>
+                            </span>
+                            <div class="home-sanpham-item_ratting">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="home-sanpham-item_origin">
+                            <span class="home-sanpham-item_origin_name">Xuất xứ: Nhật Bản</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="home-sanpham-item">
+                        <div class="home-sanpham-item_img" style="background-image: url(/Content/Theme_DongHo/image/Nu6.jpg); "></div>
+                        <p class="home-sanpham-item_name ">Tên: LADY-DATEJUST</p>
+                        <div class="home-sanpham-item_price">
+                            <span class="home-sanpham-item_price_current">Giá: 1000000.00</span>
+                        </div>
+                        <div class="home-sanpham-item_action">
+                            <span class="home-sanpham-item_like">
+                                <i class="far fa-heart"></i>
+                            </span>
+                            <div class="home-sanpham-item_ratting">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="home-sanpham-item_origin">
+                            <span class="home-sanpham-item_origin_name">Xuất xứ: Thụy Sĩ</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="home-sanpham-item">
+                        <div class="home-sanpham-item_img" style="background-image: url(/Content/Theme_DongHo/image/Nu7.jpg); "></div>
+                        <p class="home-sanpham-item_name ">Tên: SUBMARINER</p>
+                        <div class="home-sanpham-item_price">
+                            <span class="home-sanpham-item_price_current">Giá: 2000000.00</span>
+                        </div>
+                        <div class="home-sanpham-item_action">
+                            <span class="home-sanpham-item_like">
+                                <i class="far fa-heart"></i>
+                            </span>
+                            <div class="home-sanpham-item_ratting">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="home-sanpham-item_origin">
+                            <span class="home-sanpham-item_origin_name">Xuất xứ: Thụy Sĩ</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="home-sanpham-item">
+                        <div class="home-sanpham-item_img" style="background-image: url(/Content/Theme_DongHo/image/Nu1.jpg); "></div>
+                        <p class="home-sanpham-item_name ">Tên: AIR-KING</p>
+                        <div class="home-sanpham-item_price">
+                            <span class="home-sanpham-item_price_current">Giá: 2000000.00</span>
+                        </div>
+                        
+                        <div class="home-sanpham-item_action">
+                            <span class="home-sanpham-item_like">
+                                <i class="far fa-heart"></i>
+                            </span>
+                            <div class="home-sanpham-item_ratting">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="home-sanpham-item_origin">
+                            <span class="home-sanpham-item_origin_name">Xuất xứ: Nhật Bản</span>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- SanPhamMoi-->
+    <section class="page-section bg-light" id="sanphammoi">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Sản phẩm mới</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="home-sanpham-item">
+                        <div class="home-sanpham-item_img" style="background-image: url(/Content/Theme_DongHo/image/Nu2.jpg); "></div>
+                        <p class="home-sanpham-item_name ">Tên: BABY-G BGD-565SC-2</p>
+                        <div class="home-sanpham-item_price">
+                            <span class="home-sanpham-item_price_current">Giá: 2000000.00</span>
+                        </div>
+                        <div class="home-sanpham-item_action">
+                            <span class="home-sanpham-item_like">
+                                <i class="far fa-heart"></i>
+                            </span>
+                            <div class="home-sanpham-item_ratting">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="home-sanpham-item_origin">
+                            <span class="home-sanpham-item_origin_name">Xuất xứ: Nhật Bản</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="home-sanpham-item">
+                        <div class="home-sanpham-item_img" style="background-image: url(/Content/Theme_DongHo/image/Nu6.jpg); "></div>
+                        <p class="home-sanpham-item_name ">Tên: LADY-DATEJUST</p>
+                        <div class="home-sanpham-item_price">
+                            <span class="home-sanpham-item_price_current">Giá: 1000000.00</span>
+                        </div>
+                        <div class="home-sanpham-item_action">
+                            <span class="home-sanpham-item_like">
+                                <i class="far fa-heart"></i>
+                            </span>
+                            <div class="home-sanpham-item_ratting">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="home-sanpham-item_origin">
+                            <span class="home-sanpham-item_origin_name">Xuất xứ: Thụy Sĩ</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="home-sanpham-item">
+                        <div class="home-sanpham-item_img" style="background-image: url(/Content/Theme_DongHo/image/Nu4.jpg); "></div>
+                        <p class="home-sanpham-item_name ">Tên: LADY-DATEJUST</p>
+                        <div class="home-sanpham-item_price">
+                            <span class="home-sanpham-item_price_current">Giá: 1000000.00</span>
+                        </div>
+                        <div class="home-sanpham-item_action">
+                            <span class="home-sanpham-item_like">
+                                <i class="far fa-heart"></i>
+                            </span>
+                            <div class="home-sanpham-item_ratting">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="home-sanpham-item_origin">
+                            <span class="home-sanpham-item_origin_name">Xuất xứ: Thụy Sĩ</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- GiớiThiệu-->
+    <section class="page-section" id="services">
+        <div class="container">
+            <div class="row align-middle align-center" id="row-164493168">
+                <div class="col medium-8 small-12 large-6" data-animate="fadeInLeft" data-animated="true">
+                    <div class="col-inner">
+                        <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1530161724">
+                            <div class="home-sanpham-item_img" style="background-image: url(../../Content/Theme_DongHo/image/anhGT.jpg); "></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col medium-8 small-12 large-6" data-animate="fadeInRight" data-animated="true">
+                    <div class="col-inner">
+                        <h2 class="title">Giới thiệu về Watch Mona</h2>
+                        <p>“Cùng với sự phát triển không ngừng của thời trang thế giới, rất nhiều thương hiệu cho ra đời những mẫu đồng hồ nam chính hãng đa dạng về phong cách, kiểu dáng, màu sắc, kích cỡ… Một chiếc đồng hồ nam cao cấp chính hãng khắc họa một giá trị đích thực khi nói đến phụ kiện xa xỉ dành cho phái mạnh. Hiện nay, đồng hồ là phụ kiện thời trang thiết yếu đối với những người đàn ông hiện đại ngày nay. Trên cổ tay của những người đàn ông thành đạt luôn dành vị trí cho một chiếc đồng hồ nam cao cấp.”</p>
+                    </div>
+                </div>
+
+                <style scope="scope">
+                </style>
+            </div>
+            <div class="section-content relative">
+
+
+                <div class="row" id="row-1620675373">
+                    <div class="col medium-6 small-12 large-4" data-animate="fadeInRight" data-animated="true">
+                        <div class="col-inner">
+
+                            <div class="icon-box featured-box icon-box-left text-left">
+                                <div class="icon-box-img" style="width: 60px">
+                                    <div class="icon">
+                                        <div class="icon-inner">
+                                            <!--?xml version="1.0" encoding="iso-8859-1"?-->
+                                            <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.008 512.008" style="enable-background:new 0 0 512.008 512.008;" xml:space="preserve">
+<g>
+                                            <g>
+                                            <path d="M341.354,17.104c-2.1-10.1-11.1-17.3-21.4-17.1h-128c-10.3-0.2-19.3,7-21.3,17.1l-17.1,70.4h205.4L341.354,17.104z"></path>
+	</g>
+</g>
+<g>
+                                            <g>
+                                            <path d="M153.054,424.504l17.5,70.4c2.1,10.1,11,17.3,21.3,17.1h128c10.3,0.2,19.3-7,21.3-17.1l17.1-70.4H153.054z"></path>
+	</g>
+</g>
+<g>
+                                            <g>
+                                            <path d="M341.254,106.704h-170.6c-35.3,0-64,28.7-64,64v170.7c0,35.3,28.7,64,64,64h170.7c35.3,0,64-28.7,64-64v-170.7
+			C405.254,135.304,376.654,106.704,341.254,106.704z M191.954,277.304c-11.8,0-21.3-9.6-21.3-21.3c0-11.8,9.6-21.3,21.3-21.3
+			c11.8,0,21.3,9.6,21.3,21.3C213.254,267.804,203.754,277.304,191.954,277.304z M255.954,277.304c-11.8,0-21.3-9.6-21.3-21.3
+			c0-11.8,9.6-21.3,21.3-21.3c11.8,0,21.3,9.6,21.3,21.3C277.254,267.804,267.754,277.304,255.954,277.304z M319.954,277.304
+			c-11.8,0-21.3-9.6-21.3-21.3c0-11.8,9.6-21.3,21.3-21.3c11.8,0,21.3,9.6,21.3,21.3
+			C341.254,267.804,331.754,277.304,319.954,277.304z"></path>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon-box-text last-reset">
+
+                                    <h3>Hàng chính hãng</h3>
+                                    <p>Hiện nay, đồng hồ là phụ kiện thời trang thiết yếu đối với những người đàn ông hiện đại ngày nay</p>
+                                </div>
+                            </div><!-- .icon-box -->
+
+
+                        </div>
+                    </div>
+                    <div class="col medium-6 small-12 large-4" data-animate="fadeInRight" data-animated="true">
+                        <div class="col-inner">
+
+                            <div class="icon-box featured-box icon-box-left text-left">
+                                <div class="icon-box-img" style="width: 60px">
+                                    <div class="icon">
+                                        <div class="icon-inner">
+                                            <!--?xml version="1.0" encoding="iso-8859-1"?-->
+                                            <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612.003 612.003" style="enable-background:new 0 0 612.003 612.003;" xml:space="preserve">
+<g>
+                                            <path d="M608.067,333.255l-44.973-71.364c-3.563-5.658-4.764-12.49-3.352-19.022l17.854-82.442
+		c2.784-12.848-4.649-25.708-17.164-29.724l-80.323-25.759c-6.366-2.043-11.679-6.5-14.795-12.413l-39.315-74.627
+		c-6.124-11.634-20.082-16.711-32.253-11.743l-78.094,31.902c-6.188,2.522-13.122,2.522-19.31,0L218.261,6.167
+		c-12.171-4.968-26.129,0.109-32.259,11.743l-39.315,74.62c-3.116,5.913-8.429,10.37-14.795,12.413l-80.322,25.759
+		c-12.522,4.016-19.948,16.877-17.164,29.724l17.847,82.442c1.418,6.532,0.211,13.365-3.352,19.022L3.934,333.255
+		c-7.011,11.123-4.425,25.746,5.964,33.805l66.664,51.677c5.287,4.099,8.754,10.102,9.661,16.73l11.424,83.573
+		c1.775,13.026,13.16,22.573,26.289,22.062l84.288-3.263c6.679-0.262,13.192,2.114,18.154,6.602l62.462,56.677
+		c9.738,8.831,24.597,8.831,34.328,0l62.469-56.677c4.949-4.495,11.468-6.864,18.154-6.602l84.281,3.263
+		c13.141,0.511,24.514-9.042,26.295-22.062l11.424-83.573c0.907-6.628,4.374-12.63,9.655-16.73l66.664-51.677
+		C612.498,359.001,615.078,344.378,608.067,333.255z M235.234,407.92l-74.435-51.99l30.593,70.904l-20.389,8.799l-46.92-108.719
+		l21.353-9.221l75.84,53.401l-31.34-72.602l20.389-8.806l46.933,108.725L235.234,407.92z M280.468,388.393l-46.92-108.719
+		l80.616-34.801l7.931,18.396l-58.669,25.318l10.402,24.099l54.589-23.562l7.905,18.32l-54.589,23.556l12.771,29.59l60.738-26.212
+		l7.905,18.32L280.468,388.393z M464.248,309.08l-56.735-71.945l13.492,90.597L397.2,338.006l-72.871-97.512l22.464-9.706
+		l48.625,67.609l-12.356-83.253l26.116-11.27l51.831,67.718l-16.091-83.145l22.1-9.54l20.516,120.123L464.248,309.08z"></path>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon-box-text last-reset">
+
+                                    <h3>Sản phẩm mới 100%</h3>
+                                    <p>Hiện nay, đồng hồ là phụ kiện thời trang thiết yếu đối với những người đàn ông hiện đại ngày nay</p>
+                                </div>
+                            </div><!-- .icon-box -->
+
+
+                        </div>
+                    </div>
+                    <div class="col medium-6 small-12 large-4" data-animate="fadeInRight" data-animated="true">
+                        <div class="col-inner">
+
+                            <div class="icon-box featured-box icon-box-left text-left">
+                                <div class="icon-box-img" style="width: 60px">
+                                    <div class="icon">
+                                        <div class="icon-inner">
+
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                 version="1.1" id="Layer_1" x="0px" y="0px"
+                                                 viewBox="0 0 511.933 511.933"
+                                                 style="enable-background:new 0 0 511.933 511.933;"
+                                                 xml:space="preserve">
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon-box-text last-reset">
+
+                                    <h3>Bảo hành 12 tháng</h3>
+                                    <p>Hiện nay, đồng hồ là phụ kiện thời trang thiết yếu đối với những người đàn ông hiện đại ngày nay</p>
+                                </div>
+                            </div><!-- .icon-box -->
+
+
+                        </div>
+                    </div>
+                    <div class="col medium-6 small-12 large-4" data-animate="fadeInRight" data-animated="true">
+                        <div class="col-inner">
+
+                            <div class="icon-box featured-box icon-box-left text-left">
+                                <div class="icon-box-img" style="width: 60px">
+                                    <div class="icon">
+                                        <div class="icon-inner" style="color:rgb(53, 53, 53);">
+
+                                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 94 94" style="enable-background:new 0 0 94 94;" xml:space="preserve">
+<g>
+                                            <path style="fill:#030104;" d="M53.131,6C30.902,6,12.832,23.806,12.287,45.976H0l18.393,20.5l18.391-20.5H22.506
+		C23.045,29.468,36.545,16.25,53.131,16.25c16.93,0,30.652,13.767,30.652,30.75S70.061,77.75,53.131,77.75
+		c-6.789,0-13.059-2.218-18.137-5.966l-7.029,7.521C34.904,84.751,43.639,88,53.131,88C75.703,88,94,69.645,94,47S75.703,6,53.131,6
+		z M49.498,25v23.45l15.027,15.024l4.949-4.949L56.5,45.55V25H49.498z"></path>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon-box-text last-reset">
+
+                                    <h3>Đổi trả trong vòng 7 ngày</h3>
+                                    <p>Hiện nay, đồng hồ là phụ kiện thời trang thiết yếu đối với những người đàn ông hiện đại ngày nay</p>
+                                </div>
+                            </div><!-- .icon-box -->
+
+
+                        </div>
+                    </div>
+                    <div class="col medium-6 small-12 large-4" data-animate="fadeInRight" data-animated="true">
+                        <div class="col-inner">
+
+                            <div class="icon-box featured-box icon-box-left text-left">
+                                <div class="icon-box-img" style="width: 60px">
+                                    <div class="icon">
+                                        <div class="icon-inner">
+                                            <!--?xml version="1.0" encoding="iso-8859-1"?-->
+                                            <!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+                                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 419.519 419.519" style="enable-background:new 0 0 419.519 419.519;" xml:space="preserve">
+<g>
+                                            <path d="M105.839,154.031c1.249-1.592,1.602-3.641,1.081-6.263c-0.514-2.59-1.655-4.429-3.488-5.622
+		c-1.818-1.183-4.301-1.471-7.367-0.862l-9.972,1.979l3.198,16.11l9.76-1.938C102.288,156.794,104.571,155.648,105.839,154.031z"></path>
+                                            <path d="M386.784,190.429c-1.622-0.34-3.154-0.662-4.52-1.017c-15.092-3.925-22.58-6.263-27.827-16.394l-19.694-39.873
+		c-6.286-12.135-22.518-22.008-36.183-22.008h-35.354V83.957c0-8.11-6.598-14.708-14.71-14.708L13.829,69.494
+		C5.945,69.494,0,75.766,0,84.083v203.465c0,8.11,6.598,14.708,14.708,14.708h25.659c3.832,27.098,27.169,48.013,55.311,48.013
+		c28.144,0,51.483-20.914,55.315-48.013h93.496c0.616,0,1.246-0.034,1.879-0.082c3.796,27.138,27.151,48.095,55.322,48.095
+		c28.144,0,51.483-20.914,55.315-48.013h36.746c14.208,0,25.766-11.558,25.766-25.765v-44.204
+		C419.519,197.297,399.819,193.164,386.784,190.429z M41.011,179.946l5.119,25.786l-14.407,2.86l-12.708-64.018l44.753-8.884
+		l2.293,11.551l-30.346,6.024l3.003,15.129l25.999-5.161l2.292,11.552L41.011,179.946z M95.679,315.104
+		c-11.415,0-20.701-9.287-20.701-20.702c0-11.415,9.286-20.702,20.701-20.702c11.419,0,20.709,9.287,20.709,20.702
+		C116.388,305.817,107.098,315.104,95.679,315.104z M119.435,191.179l-0.311-0.161c-1.538-0.798-2.749-2.366-3.599-4.661
+		c-0.779-2.104-1.37-4.157-1.756-6.104l-0.872-4.39c-0.559-2.816-1.754-4.864-3.552-6.089c-1.797-1.223-4.112-1.559-6.893-1.007
+		l-10.867,2.157l4.924,24.805l-14.408,2.86l-12.708-64.018l24.38-4.84c7.274-1.444,13.404-0.892,18.221,1.638
+		c4.892,2.569,7.981,6.94,9.183,12.991c0.676,3.407,0.357,6.564-0.947,9.383c-1.008,2.177-2.584,4.182-4.698,5.983
+		c2.994,0.626,5.419,1.899,7.23,3.797c2.23,2.341,3.753,5.501,4.527,9.394l0.905,4.561c0.327,1.648,0.901,3.351,1.707,5.064
+		c0.745,1.585,1.686,2.681,2.797,3.258l0.427,0.221l0.466,2.347L119.435,191.179z M139.81,187.135l-12.708-64.018l44.37-8.808
+		l2.293,11.551l-29.962,5.948l2.707,13.638l25.701-5.102l2.292,11.552l-25.7,5.102l3.122,15.726l30.048-5.965l2.293,11.552
+		L139.81,187.135z M189.933,177.185l-12.708-64.018l44.37-8.808l2.293,11.551l-29.962,5.948l2.708,13.637l25.7-5.102l2.292,11.552
+		l-25.7,5.102l3.122,15.726l30.047-5.965l2.293,11.552L189.933,177.185z M301.691,315.104c-11.415,0-20.701-9.287-20.701-20.702
+		c0-11.415,9.286-20.702,20.701-20.702c11.419,0,20.709,9.287,20.709,20.702C322.4,305.817,313.11,315.104,301.691,315.104z
+		 M263.206,187.26v-54.948h27.085c10.395,0,23.217,7.8,27.979,16.988l17.525,35.482c0.452,0.873,0.924,1.698,1.419,2.478H263.206z"></path>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon-box-text last-reset">
+
+                                    <h3>Miễn phí giao hàng</h3>
+                                    <p>Hiện nay, đồng hồ là phụ kiện thời trang thiết yếu đối với những người đàn ông hiện đại ngày nay</p>
+                                </div>
+                            </div><!-- .icon-box -->
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+    <!-- About-->
+    <section class="page-section" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">About</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="~/Content/Theme_DongHo/image/rolex1.jpg" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>1905-1920</h4>
+                            <h4 class="subheading">Thời kỳ đầu</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">Rolex được thành lập vào năm 1905 tại London và sản xuất các mẫu đồng hồ chính xác với chất lượng cao. Trong giai đoạn này, Rolex đặt nền móng cho sự phát triển của mình về chất lượng và độ chính xác.</p></div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="~/Content/Theme_DongHo/image/classico4.png" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>1920-1950</h4>
+                            <h4 class="subheading">Thời kỳ trưởng thành</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">Rolex tiếp tục phát triển và đưa ra nhiều tính năng mới trên đồng hồ của mình, bao gồm việc sử dụng kim cương trên đồng hồ, tạo ra đồng hồ chống nước hoàn chỉnh và đưa ra các mẫu đồng hồ nổi tiếng như Rolex Datejust.</p></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="~/Content/Theme_DongHo/image/classico1.png" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>1950-1980</h4>
+                            <h4 class="subheading">Thời kỳ mở rộng</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted"> Rolex mở rộng phạm vi sản xuất của mình và bắt đầu sản xuất các dòng sản phẩm đặc biệt như đồng hồ đeo tay cho các vận động viên và phi công. Trong thời kỳ này, Rolex cũng nghiên cứu và phát triển công nghệ để tăng cường tính năng chống nước và độ chính xác trên đồng hồ của mình.</></div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="~/Content/Theme_DongHo/image/Nu2.jpg" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>1980-Nay</h4>
+                            <h4 class="subheading">Thời kỳ đương đại</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">Thời kỳ đương đại (1980-Nay): Rolex tiếp tục phát triển và cải tiến đồng hồ của mình với các tính năng và công nghệ mới như khả năng chống từ trường, chống sốc, khả năng lưu trữ năng lượng, đồng hồ có tính năng thể thao và đồng hồ đeo tay cao cấp. Rolex cũng tập trung vào bảo vệ môi trường và bền vững trong sản xuất đồng hồ của mình bằng cách sử dụng các vật liệu tái chế và cải tiến quy trình sản xuất để giảm thiểu tác động đến môi trường.</p></div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <h4>
+                            Be Part
+                            <br />
+                            Of Our
+                            <br />
+                            Story!
+                        </h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Team-->
+    <section class="page-section bg-light" id="team">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">ZuiZe Team</h2>
+                <h3 class="section-subheading text-muted"></h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="~/Content/Theme_DongHo/image/Si2.jpg" alt="..." />
+                        <h4>Lâm Lương Sĩ</h4>
+                        <p class="text-muted">2011063266</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="~/Content/Theme_DongHo/image/Phong.jpg" alt="..." />
+                        <h4>Trần Văn Phong</h4>
+                        <p class="text-muted">1911790020</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="~/Content/Theme_DongHo/image/Huy.jpg" alt="..." />
+                        <h4>Nguyễn Ngọc Huy</h4>
+                        <p class="text-muted">2011064158</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="~/Content/Theme_DongHo/image/Khang.jpg" alt="..." />
+                        <h4>Phan Văn Khang</h4>
+                        <p class="text-muted">2011068344</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+               
+            </div>
+        </div>
+    </section>
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Liên hệ</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- * * SB Forms Contact Form * *-->
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- This form is pre-integrated with SB Forms.-->
+            <!-- To make this form functional, sign up at-->
+            <!-- https://startbootstrap.com/solution/contact-forms-->
+            <!-- to get an API token!-->
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <!-- Name input-->
+                            <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <div class="form-group">
+                            <!-- Email address input-->
+                            <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
+                        <div class="form-group mb-md-0">
+                            <!-- Phone number input-->
+                            <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <!-- Message input-->
+                            <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Submit success message-->
+                <!---->
+                <!-- This is what your users will see when the form-->
+                <!-- has successfully submitted-->
+                <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center text-white mb-3">
+                        <div class="fw-bolder">Form submission successful!</div>
+                        To activate this form, sign up at
+                        <br />
+                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                    </div>
+                </div>
+                <!-- Submit error message-->
+                <!---->
+                <!-- This is what your users will see when there is-->
+                <!-- an error submitting the form-->
+                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                <!-- Submit Button-->
+                <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2022</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio item 1 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Threads
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Illustration
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 2 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Explore
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Graphic Design
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 3 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Finish
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Identity
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 4 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Lines
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Branding
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 5 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Southwest
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Website Design
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 6 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Window
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Photography
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,58 @@
+﻿@model IEnumerable<NhomZuiZeDoAn.Models.DongHo>
+
+@{
+    ViewBag.Title = "Index";
+
+}
+
+
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        DataTable Example
+    </div>
+    <div class="card-body">
+        <table id="datatablesSimple">
+            <thead>
+                <tr>
+                    <th>Hãng</th>
+                    <th>Tên Sản Phẩm</th>
+                    <th>Giá</th>
+                    <th>Hình Ảnh</th>
+                    <th>Xuất Xứ</th>
+                    <th>Mẫu</th>
+                    <th>Chức Năng</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Hangss.TenHang</td>
+                        <td>@item.Ten</td>
+                        <td>@item.Gia</td>
+                        <td>
+                            <div class="home-sanpham-item_img" style="background-image: url(@item.Image); "></div>
+                            <style>
+                                .home-sanpham-item_img {
+                                    padding-top: 100%;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                            </style>
+                        </td>
+                        <td>@item.XuatXu</td>
+                        <td>@item.GioiTinh</td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+</div>
